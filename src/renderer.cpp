@@ -331,15 +331,15 @@ std::string exportRender(std::string resultpath, std::vector<nodeInfo> &nodes, b
     std::sort(nodes.begin(), nodes.end(), comparer); //sort by export_sort_method
 
     //add title line into the list
-    node.group = "Group";
-    node.remarks = "Remarks";
+    node.group = "群组";
+    node.remarks = "分类";
     if(export_as_new_style)
     {
         node.pkLoss = "     Loss     ";
         node.avgPing = "     Ping     ";
         node.sitePing = "  Google Ping  ";
-        node.avgSpeed = "  AvgSpeed  ";
-        node.maxSpeed = "  MaxSpeed  ";
+        node.avgSpeed = "  平均速度  ";
+        node.maxSpeed = "  最大速度  ";
         node.natType = "  UDP NAT Type  ";
     }
     else
